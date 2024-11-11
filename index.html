@@ -1,41 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Graphic Designer Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="/">Accueil</a>
+            <a href="/about">À propos</a>
         </nav>
     </header>
-
-    <section id="about">
-        <!-- Add content about the graphic designer here -->
-    </section>
-
-    <section id="work">
-        <div class="gallery">
-            <img src="image1.jpg" alt="Description of image 1">
-            <img src="image2.jpg" alt="Description of image 2">
-            <img src="image3.jpg" alt="Description of image 3">
-        </div>
-    </section>
-
-
-
-    <section id="contact">
-        <!-- Add a contact form or contact information here -->
-    </section>
-
+    <main>
+        {{ content }}
+    </main>
     <footer>
-        <!-- Add copyright information or other footer content here -->
+        <p>© {{ site.time | date: "%Y" }} - Mon site Jekyll</p>
     </footer>
 </body>
 </html>
+
