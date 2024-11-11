@@ -2,23 +2,23 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Page</title>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le CSS personnalisé -->
 </head>
 <body>
     <header>
-        <h1>Title</h1>
-        <p>Desc</p>
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
         <nav>
             <a href="/">Accueil</a>
             <a href="/about">À propos</a>
         </nav>
     </header>
     <main>
-        {{ Content }}
+        {{ content }}
     </main>
     <footer>
-        <p>2024</p>
+        <p>© {{ site.time | date: "%Y" }} - Mon site Jekyll</p>
     </footer>
 </body>
 </html>
-
