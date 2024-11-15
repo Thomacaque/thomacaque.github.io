@@ -1,5 +1,5 @@
 ---
-# La structure du layout "home"
+# Layout "home" pour la page d'accueil avec Minima
 ---
 
 <header>
@@ -7,13 +7,14 @@
   <p>{{ site.description }}</p>
 </header>
 
-
+<!-- Lien vers le fichier CSS personnalisé -->
 <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
 <main>
-  {{ content }}  <!-- Affiche le contenu de index.md -->
+  <!-- Affiche le contenu du fichier index.md -->
+  {{ content }}
 </main>
 
 <footer>
-  <p>© 2024 Mon Portfolio</p>
+  <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
 </footer>
