@@ -1,3 +1,1 @@
-minima:
-  # Vous pouvez ajouter votre fichier CSS personnalisé ici
-  custom_css: "/assets/css/styles.css"
+theme: minima
