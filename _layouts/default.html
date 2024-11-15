@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  
+  <!-- Inclut les styles de Jekyll Minima -->
+  <link rel="stylesheet" href="{{ '/assets/css/minima.min.css' | relative_url }}">
+</head>
+
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+  </header>
+
+  <main>
+    {{ content }}  <!-- Affiche le contenu de index.md -->
+  </main>
+
+  <footer>
+    <p>© 2024 Mon Portfolio</p>
+  </footer>
+</body>
+</html>
