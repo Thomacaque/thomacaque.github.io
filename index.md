@@ -7,11 +7,10 @@ title: Test1
 
 ## header 2
 
-### Image 1
-![Description de l'image 1](assets/images/train.webp)
+### Portfolio d'images
 
-### Image 2
-![Description de l'image 2](assets/images/chat.webp)
-
-
-
+<div class="portfolio-images">
+    <img src="{{ '/assets/images/projet1.jpg' | relative_url }}" alt="Projet 1">
+    <img src="{{ '/assets/images/projet2.jpg' | relative_url }}" alt="Projet 2">
+    <img src="{{ '/assets/images/projet3.jpg' | relative_url }}" alt="Projet 3">
+</div>
