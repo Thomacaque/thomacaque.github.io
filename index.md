@@ -18,8 +18,8 @@ title: Test1
 
 
 <div class="portfolio-images">
-    <img src="assets/images/image1.jpg" alt="Description de l'image 1">
-    <img src="assets/images/image2.jpg" alt="Description de l'image 2">
+    <img src="assets/images/train.webp" alt="Description de l'image 1">
+    <img src="assets/images/chat.webp" alt="Description de l'image 2">
     <img src="assets/images/image3.jpg" alt="Description de l'image 3">
 </div>
 
