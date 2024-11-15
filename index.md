@@ -10,7 +10,6 @@ title: Test1
 ### Portfolio d'images
 
 <div class="portfolio-images">
-    <img src="{{ '/assets/images/projet1.jpg' | relative_url }}" alt="Projet 1">
-    <img src="{{ '/assets/images/projet2.jpg' | relative_url }}" alt="Projet 2">
-    <img src="{{ '/assets/images/projet3.jpg' | relative_url }}" alt="Projet 3">
+    <img src="{{ '/assets/images/train.webp' | relative_url }}" alt="Projet 1">
+    <img src="{{ '/assets/images/chat.webp' | relative_url }}" alt="Projet 2">
 </div>
