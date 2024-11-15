@@ -1,5 +1,5 @@
 ---
-layout: home.html
+layout: home
 title: "Test1"
 ---
 
