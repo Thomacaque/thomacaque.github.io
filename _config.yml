@@ -1,3 +1,2 @@
 title: Mon Portfolio
-description: Un simple portfolio utilisant Jekyll.
-theme: jekyll-theme-slate
+remote_theme: jekyll/minima
