@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Test1
+title: "Test1"
 ---
 
 # contenu à rédiger
