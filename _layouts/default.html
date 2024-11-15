@@ -1,7 +1,29 @@
-<nav>
-  <ul>
-    <li><a href="{{ '/' | relative_url }}">Accueil</a></li>
-    <li><a href="{{ '/projets' | relative_url }}">Projets</a></li>
-    <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
-  </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ '/' | relative_url }}">Accueil</a></li>
+                <li><a href="{{ '/projets' | relative_url }}">Projets</a></li>
+                <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Le contenu de la page est ici -->
+        {{ content }}  <!-- Cette ligne est cruciale pour rendre le contenu de index.md -->
+    </main>
+
+    <footer>
+        <p>© 2024 Mon Portfolio</p>
+    </footer>
+</body>
+</html>
