@@ -13,13 +13,5 @@ title: Test1
 ### Image 2
 ![Description de l'image 2](assets/images/chat.webp)
 
-### Image 3
-![Description de l'image 3](assets/images/image3.jpg)
 
-
-<div class="portfolio-images">
-    <img src="assets/images/train.webp" alt="Description de l'image 1">
-    <img src="assets/images/chat.webp" alt="Description de l'image 2">
-    <img src="assets/images/image3.jpg" alt="Description de l'image 3">
-</div>
 
