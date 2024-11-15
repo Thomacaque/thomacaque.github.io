@@ -1,11 +1,11 @@
 ---
-layout: home
-title: "Test1"
+layout: default
+title: "Mon Portfolio"
 ---
 
-# contenu à rédiger
+# Bienvenue sur mon Portfolio
 
-## header 2
+Voici quelques-uns de mes projets récents.
 
 ### Portfolio d'images
 
