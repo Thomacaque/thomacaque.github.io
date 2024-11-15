@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <!-- Relier le CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    
+    <!-- Lien vers le CSS du thème -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+    <!-- Ajoutez ici le lien vers le CSS du thème Jekyll -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
+
 <body>
     <header>
         <h1>Bienvenue</h1>
