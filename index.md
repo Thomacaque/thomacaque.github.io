@@ -8,7 +8,7 @@ title: Test1
 ## header 2
 
 ### Image 1
-![Description de l'image 1](assets/images/train.jpg)
+![Description de l'image 1](assets/images/train.webp)
 
 ### Image 2
 ![Description de l'image 2](assets/images/image2.jpg)
