@@ -87,19 +87,23 @@ section {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0.5rem; /* Réduit l'espace entre les photos */
+    grid-auto-rows: minmax(200px, 1fr);
+    gap: 1rem; /* Espacement régulier entre les photos */
 }
 
 .gallery-item {
     position: relative;
     overflow: hidden;
     border-radius: var(--border-radius);
-    height: 200px; /* Hauteur fixe pour maintenir une grille cohérente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* Ajoute un padding pour centrer les images */
 }
 
 .gallery-item img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain; /* Garantit que l'image entière est visible */
     object-position: center; /* Centre l'image dans le conteneur */
     transition: transform var(--transition-duration) ease, filter var(--transition-duration) ease;
