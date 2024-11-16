@@ -333,12 +333,7 @@ footer {
         width: 100%; /* Le bouton prend toute la largeur */
     }
 
-    .image-viewer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    
 
     .image-viewer img {
         max-width: 100%;
@@ -353,7 +348,7 @@ footer {
     }
 
     .nav-button {
-        font-size: 1.5rem;
-        padding: 8px;
+        display: none; /* Masquer les flèches de navigation sur mobile */
     }
 }
+
