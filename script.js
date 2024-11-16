@@ -32,8 +32,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     imageViewer.addEventListener('click', function(event) {
-        if (event.target === imageViewer) {
+        if (event.target === imageViewer || event.target === closeButton) {
             imageViewer.style.display = 'none';
         }
+    });
+
+    // Prevent the viewer from opening when clicking on the overlay
+    document.querySelectorAll('.overlay').forEach(overlay => {
+        overlay.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
     });
 });
