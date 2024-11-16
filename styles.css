@@ -329,9 +329,16 @@ footer {
         width: 100%; /* Le bouton prend toute la largeur */
     }
 
-    .nav-button {
-        font-size: 1.5rem;
-        padding: 8px;
+    .image-viewer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-viewer img {
+        max-width: 100%;
+        max-height: 80%;
     }
 
     .close-button {
@@ -341,11 +348,8 @@ footer {
         padding: 8px;
     }
 
-    .image-viewer {
-        display: none !important; /* Désactive la visionneuse sur les petits écrans */
-    }
-
-    .view-larger {
-        display: none; /* Cache les liens de visionneuse sur les petits écrans */
+    .nav-button {
+        font-size: 1.5rem;
+        padding: 8px;
     }
 }
