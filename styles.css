@@ -100,7 +100,7 @@ section {
 .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Couvre entièrement le conteneur tout en maintenant l'aspect ratio */
+    object-fit: contain; /* Garantit que l'image entière est visible */
     object-position: center; /* Centre l'image dans le conteneur */
     transition: transform var(--transition-duration) ease, filter var(--transition-duration) ease;
 }
