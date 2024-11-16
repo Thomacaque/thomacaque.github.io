@@ -94,12 +94,14 @@ section {
     position: relative;
     overflow: hidden;
     border-radius: var(--border-radius);
+    height: 200px; /* Hauteur fixe pour maintenir une grille cohérente */
 }
 
 .gallery-item img {
-    max-width: 100%;  /* Applique max-width à 100% */
-    height: auto;     /* Assure que la hauteur est automatique */
-    display: block;   /* Définit display en block pour éliminer les espaces indésirables */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Couvre entièrement le conteneur tout en maintenant l'aspect ratio */
+    object-position: center; /* Centre l'image dans le conteneur */
     transition: transform var(--transition-duration) ease, filter var(--transition-duration) ease;
 }
 
@@ -114,8 +116,6 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    width: 100%;
     opacity: 0;
     transition: opacity var(--transition-duration) ease;
     background-color: var(--header-overlay);
@@ -124,10 +124,12 @@ section {
     justify-content: center;
     color: white;
     text-align: center;
+    pointer-events: none; /* Empêche l'overlay de capturer les événements de la souris */
 }
 
 .gallery-item:hover .overlay {
     opacity: 1;
+    pointer-events: auto; /* Permet au bouton d'être cliquable */
 }
 
 .view-larger {
@@ -240,6 +242,54 @@ footer {
     padding: 0.5rem 0;
     margin-top: 2rem;
     font-size: 0.9rem;
+}
+
+/* Image Viewer Styles */
+.image-viewer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.image-viewer img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: var(--border-radius);
+}
+
+.close-button, .nav-button {
+    position: absolute;
+    top: 20px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.close-button {
+    right: 20px;
+}
+
+.nav-button {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px;
 }
 
 /* Responsive Design */
