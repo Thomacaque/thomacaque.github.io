@@ -36,11 +36,4 @@ document.addEventListener('DOMContentLoaded', function() {
             imageViewer.style.display = 'none';
         }
     });
-
-    // Prevent the viewer from opening when clicking on the overlay
-    document.querySelectorAll('.overlay').forEach(overlay => {
-        overlay.addEventListener('click', function(event) {
-            event.stopPropagation();
-        });
-    });
 });
