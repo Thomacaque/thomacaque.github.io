@@ -266,7 +266,6 @@ footer {
 
 .close-button, .nav-button {
     position: absolute;
-    top: 20px;
     font-size: 2rem;
     color: #fff;
     cursor: pointer;
@@ -276,6 +275,7 @@ footer {
 }
 
 .close-button {
+    top: 20px;
     right: 20px;
 }
 
@@ -339,5 +339,17 @@ footer {
         right: 10px;
         font-size: 1.5rem;
         padding: 8px;
+    }
+
+    .image-viewer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-viewer img {
+        max-width: 100%;
+        max-height: 80%;
     }
 }
